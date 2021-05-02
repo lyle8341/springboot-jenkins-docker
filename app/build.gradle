@@ -34,10 +34,8 @@ project.version = scmVersion.version
 
 task loadKeyPassword {
     doFirst {
-        println customerUsername
-        println customerPassword
-        scmVersion.repository.customKeyPassword = customerUsername
-        scmVersion.repository.customKey = customerPassword
+        scmVersion.repository.customUsername = customerUsername
+        scmVersion.repository.customPassword = customerPassword
     }
 }
 
