@@ -18,7 +18,7 @@ release-0.1.0
 
 
 
-授权
+授权(命令行方式)
 gradle release -Prelease.customUsername=**** -Prelease.customPassword=****
 
 https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorization/
