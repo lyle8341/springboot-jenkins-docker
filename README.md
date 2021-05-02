@@ -29,4 +29,5 @@ https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorizatio
   << was deprecated in Gradle 4.x and removed in Gradle 5.0
   ```
 
-在USER_HOME/.gradle目录的gradle.properties里维护自定义属性
++ 敏感参数key在本地保存
+  - 在USER_HOME/.gradle目录的gradle.properties里维护自定义属性
