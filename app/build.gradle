@@ -31,3 +31,14 @@ test {
 }
 
 project.version = scmVersion.version
+
+task loadKeyPassword {
+    doFirst {
+        println customerUsername
+        println customerPassword
+        scmVersion.repository.customKeyPassword = customerUsername
+        scmVersion.repository.customKey = customerPassword
+    }
+}
+
+release.dependsOn loadKeyPassword

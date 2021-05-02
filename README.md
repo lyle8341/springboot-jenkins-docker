@@ -24,6 +24,9 @@ gradle release -Prelease.customUsername=**** -Prelease.customPassword=****
 https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorization/
 ```
 
-
++ Could not find method leftShift() for arguments 
+  ```
+  << was deprecated in Gradle 4.x and removed in Gradle 5.0
+  ```
 
 在USER_HOME/.gradle目录的gradle.properties里维护自定义属性
