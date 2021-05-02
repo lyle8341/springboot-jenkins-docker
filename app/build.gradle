@@ -28,7 +28,12 @@ test {
     useJUnitPlatform()
 }
 
+
 project.version = scmVersion.version
+
+scmVersion {
+    ignoreUncommittedChanges = false
+}
 
 task loadKeyPassword {
     doFirst {
