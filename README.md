@@ -37,3 +37,18 @@ https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorizatio
     ```
 
 ## 一定要有新提交内容且推送到远端才可以，release，！！！！
+
++ 1.打包
+  + gradle app:clean app:bootJar
++ 2.制作镜像
+  ```shell
+  # 点表示当前目录（Dockerfile的路径）
+  docker build -t jenkens-demo:0.1.1 .
+  # -t : Name and optionally a tag in the 'name:tag' format
+  ```
++ 3.查看镜像构建过程
+  + docker history jenkens-demo:0.1.1
++ 4.清理 build cache 可选
+  + docker builder prune
++ 5.本地测试
+  + docker run --rm -p 8080:8080 jenkens-demo:0.1.1
