@@ -32,9 +32,9 @@ project.version = scmVersion.version
 
 scmVersion {
     ignoreUncommittedChanges = true
-    tag {
-        prefix = 'my-project-name'
-    }
+    /*tag {
+        prefix = 'my-project-name'  // 默认: v   eg:v0.1.7
+    }*/
 }
 task loadKeyPassword {
     doFirst {
