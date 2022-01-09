@@ -31,3 +31,9 @@ https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorizatio
 
 + 敏感参数key在本地保存
   - 在USER_HOME/.gradle目录的gradle.properties里维护自定义属性
+    ```
+    customerUsername=lyle8341
+    customerPassword=token....
+    ```
+
+## 一定要有新提交内容才可以，release，！！！！

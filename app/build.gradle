@@ -28,11 +28,13 @@ test {
     useJUnitPlatform()
 }
 
-
 project.version = scmVersion.version
 
 scmVersion {
     ignoreUncommittedChanges = true
+    tag {
+        prefix = 'my-project-name'
+    }
 }
 task loadKeyPassword {
     doFirst {
@@ -42,8 +44,3 @@ task loadKeyPassword {
 }
 
 release.dependsOn loadKeyPassword
-
-/*task loadGitHubToken {
-    scmVersion.repository.customUsername = customerUsername
-    scmVersion.repository.customPassword = customerPassword
-}*/
