@@ -34,7 +34,6 @@ project.version = scmVersion.version
 scmVersion {
     ignoreUncommittedChanges = true
 }
-
 task loadKeyPassword {
     doFirst {
         scmVersion.repository.customUsername = customerUsername
@@ -43,3 +42,8 @@ task loadKeyPassword {
 }
 
 release.dependsOn loadKeyPassword
+
+/*task loadGitHubToken {
+    scmVersion.repository.customUsername = customerUsername
+    scmVersion.repository.customPassword = customerPassword
+}*/
