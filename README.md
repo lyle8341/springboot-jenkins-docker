@@ -36,4 +36,4 @@ https://axion-release-plugin.readthedocs.io/en/latest/configuration/authorizatio
     customerPassword=token....
     ```
 
-## 一定要有新提交内容才可以，release，！！！！
+## 一定要有新提交内容且推送到远端才可以，release，！！！！
